@@ -73,7 +73,9 @@ export default function ExcelToProperties({ onChange }) {
                                     fontSize: '20px',
                                     color: '#F44336',
                                     cursor: 'pointer'
-                            }} onClick={(e) => { e.target.href = "data:text/plain;charset=UTF-8,"  + encodeURIComponent(mappedArr.join('\n')); }}download={`${item.toLowerCase()}.properties`}>
+                            }} 
+                            href="abc"
+                            onClick={(e) => { e.target.href = "data:text/plain;charset=UTF-8,"  + encodeURIComponent(mappedArr.join('\n')); }}download={`${item.toLowerCase()}.properties`}>
                                 {`${item.toLowerCase()}.properties`}
                             </a>
                         </div>
