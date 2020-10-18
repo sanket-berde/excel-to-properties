@@ -1,5 +1,6 @@
 {
   "name": "excel-to-properties",
+  "author": "Sanket Berde(https://github.com/sanket-berde)",
   "version": "1.0.0",
   "engines": {
     "npm": "6.13.7",
