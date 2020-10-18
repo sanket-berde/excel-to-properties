@@ -45,7 +45,7 @@ export default function ExcelToProperties({ onChange }) {
     console.log(finalObj);
 
     return (
-        <div style={{
+        <div className="excel-to-properties-container" style={{
             width: '100%'
         }}>
             <div style={{ marginBottom: '30px' }}>

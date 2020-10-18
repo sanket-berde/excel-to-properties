@@ -13,6 +13,10 @@
   }
 }
 
+li {
+  list-style: none;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -22,6 +26,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  /* width: 100%; */
+  padding: 0 10px;
 }
 
 .App-link {
@@ -70,5 +76,79 @@
 
 .first:hover {
   box-shadow: 0 0 40px 40px #e74c3c inset;
+}
+
+.third {
+  border-color: #3498db;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  transition: all 150ms ease-in-out;
+}
+
+.third:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+
+
+.tabs {
+  /* max-width: 538px; */
+  width: 100%;
+}
+
+.tabs-nav {
+  display: flex;
+  padding: 0;
+  margin: 0
+}
+
+.tabs-nav li {
+  float: left;
+  width: 50%;
+}
+.tabs-nav li:first-child a {
+  border-right: 0;
+  border-top-left-radius: 6px;
+}
+.tabs-nav li:last-child a {
+  border-top-right-radius: 6px;
+}
+a {
+  background: #eaeaed;
+  border-bottom: 3px solid transparent;
+  color: #0087cc;
+  display: block;
+  font-weight: 600;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+}
+a:hover {
+  color: #0b5072;
+}
+.tab-active a {
+  background: #fff;
+  /* border-bottom-color: transparent; */
+  border-bottom-color: #4CAF50;
+  color: #2db34a;
+  cursor: default;
+}
+.tabs-stage {
+  border: 1px solid #cecfd5;
+  border-radius: 0 0 6px 6px;
+  border-top: 0;
+  clear: both;
+  padding: 24px 30px;
+  position: relative;
+  top: -1px;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.excel-to-properties-container a {
+  border: none;
+  background: transparent;
 }
 
