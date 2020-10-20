@@ -53,7 +53,7 @@ export default function PropertiesToExcel () {
         var reader = new FileReader();
         reader.onload = function () {
             // console.log(reader.result);
-            const arr = reader.result.split('\n');
+            const arr = reader.result.toString().split('\n');
             let translationKeysArr = [];
 
             const resultObj = arr.map((item) => {
