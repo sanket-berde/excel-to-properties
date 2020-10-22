@@ -42,7 +42,7 @@ function App() {
             </li>
           </ul>
           <div className="tabs-stage">
-            <div id="tab-1">
+            <div id="tab-1" class="tab-data">
               <p>
                 <h2 style={{ marginBottom: "10px" }}>
                   Upload an excel file with appropriate format
@@ -50,7 +50,7 @@ function App() {
                 <ExcelToProperties />
               </p>
             </div>
-            <div id="tab-2">
+            <div id="tab-2" class="tab-data">
               <p>
                 <h2 style={{ marginBottom: "10px" }}>
                   Generate Excel From properties files

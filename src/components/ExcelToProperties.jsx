@@ -66,7 +66,7 @@ export default function ExcelToProperties({ onChange }) {
                     return (index !== 0 && 
                         (
                         <div style={{ margin: '10px', border: '1px solid #FFF', padding: '10px', flexBasis: '30%' }}>
-                            <h5 style={{ margin: '10px auto'}}>{item}</h5>
+                            <h5 style={{ margin: '10px auto'}}>{item.replace('.properties', '')}</h5>
                             <textarea style={{ width: '90%', minHeight: '200px'}}name={item} onClick={(e) => { e.target.select();  }} value={mappedArr.join('\n')} placeholder={item} />
                             <a style={{
                                     display: 'block',
@@ -76,7 +76,7 @@ export default function ExcelToProperties({ onChange }) {
                             }} 
                             href="abc"
                             onClick={(e) => { e.target.href = "data:text/plain;charset=UTF-8,"  + encodeURIComponent(mappedArr.join('\n')); }}download={`${item.toLowerCase()}.properties`}>
-                                {`${item.toLowerCase()}.properties`}
+                                {`${item.toLowerCase().replace('.properties', '')}.properties`}
                             </a>
                         </div>
                         )
